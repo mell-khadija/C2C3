@@ -17,14 +17,18 @@
     line-height: 1.7;
     font-weight: bold;
     
+        height: 3000px;
+       
+
+    
   }
   
-  .container {
-    max-width: 1370px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
+//   .container {
+//     max-width: 1370px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin: 0 auto;
+//   }
   
   .active {
     color: $secondary_color !important;
