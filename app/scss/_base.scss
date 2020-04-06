@@ -15,12 +15,7 @@
     font-size: 16px;
     font-family: 'cairo', sans-serif;
     line-height: 1.7;
-    font-weight: bold;
-    
-     
-       
-
-    
+    font-weight: bold;  
   }
   .res-img {
     width: 100%;
@@ -33,10 +28,19 @@
     margin: 0 auto;
   }
   
-  // .active {
-  //   color: $secondary_color !important;
-  // }
   
+  body::-webkit-scrollbar {
+    width: .9rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #D0E5F0;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #1078ad ;
+  }
+
   // %limited_width {
   //   max-width: 580px;
   //   margin: 0 auto;
@@ -46,18 +50,4 @@
   //   color: $secondary_color;
   // }
   
-  // %btn {
-  //   padding: 15px;
-  //   color: $white_color;
-  //   border-radius: 10px;
-  //   text-align: center;
-  // }
   
-  // .title {
-  //   margin: 0 auto;
-  //   max-width: 580px;
-  //   text-align: center;
-  //   font-size: 30px;
-  //   padding: 20px 0px;
-  //   color: $secondary_color;
-  // }
