@@ -22,7 +22,7 @@
         justify-content: space-between;
     }
   }
-  .img_container {
+  .img-container {
     height: 120px;
     @media (max-width: 767px) {
       height: 90px;
@@ -49,6 +49,9 @@
   
   .caption {
     padding: 20px 10px;
+    color: $bleu-clear-color;
+    font-size: 20px;
+    font-weight: 600;
   }
 // fin de partie protege
    
@@ -73,7 +76,7 @@
             }
 
     }
-    .information--info p{
+    .information-info p{
         font-size: 25px;
         font-weight: bold;
         color: $bleu-clear-color;
@@ -88,30 +91,30 @@
         width: 100%;
       }
     }
-    .information-types {
+    .information-items {
         display: flex;
         margin: 0 auto;
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-between;
-      align-items: center;
-      // margin-top: auto;
-      @media (max-width: 767px) {
+        align-items: center;
+      @media (max-width: 768px) {
         flex-direction: column;
       }
       a {
         text-decoration: none;
         padding: 15px 20px;
         color: $white-color;
-        border-radius: 6px;
+        border-radius: 4px;
         text-align: center;
         display: block;
-        width: 250px;
+        width: 230px;
         margin: 0 auto;
         background-color:  $bleu2-color;
         @media (max-width: 767px) {
-          width: 40%;
+          width: 50%;
           margin: 0 auto;
+          padding: 15px 10px;
         }
       }
     }
@@ -119,7 +122,7 @@
   // end of information
 
   //start-transmition
-  .symptomes--transmition {
+  .symptomes-transmition {
     color:  $bleu2-color;
     .title{
         max-width: 580px;
@@ -136,16 +139,18 @@
             }
 
     }
-    .symptomes--transmition-items {
+    .symptomes-transmition-items {
         display: flex;
         margin: 0 auto;
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-between;
-       max-width: 900px;
+        max-width: 900px;
     }
     .caption2 {
         padding: 20px 10px;
         color: $bleu-clear-color;
+        font-size: 20px;
+        font-weight: 600;
       }
   }

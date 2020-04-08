@@ -3,8 +3,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   background-image: url("../../img/SVG/Merged\ bar-1.svg");
   background-size: cover;
   align-items: center;
@@ -14,7 +13,7 @@ nav {
   top: 0;
   width: 100%;
   height: 88px;
-  .navbar--items {
+  .navbar-items {
     max-width: 320px;
     flex: 3;
     justify-content: space-between;
@@ -36,7 +35,7 @@ nav {
 }
 
 
-.navbar--items--btn {
+.navbar-items-button {
   border: 2px solid $bleu2-color;
   align-self: start;
   border-radius: 10px;
@@ -56,10 +55,10 @@ nav {
   width: 100%;
 }
 
-.hero--warning {
+.hero-header {
   padding: 20px;
   margin: 0 auto;
-  .hero--warning-para {
+  .hero-header-para {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
@@ -68,7 +67,7 @@ nav {
     font-size: 15px;
     font-weight: 600;
   }
-  .hero--warning--title {
+  .hero-header-title {
     padding: 8px 0px;
     max-width: 700px;
     margin: 0 auto;
@@ -106,6 +105,8 @@ nav {
   }
 }
 // end section hero
+
+// start part2
 
 .part2-comman {
   display: flex;
@@ -150,7 +151,7 @@ nav {
 .button {
   width: 40%;
   background-color:$bleu2-color;
-  border: none;
+  outline: none;
   color: white;
   padding: 5px 145px;
   border: 2px solid  $bleu2-color;
@@ -159,6 +160,10 @@ nav {
   text-decoration: none;
   font-size: 32px;
   font-weight: bold;
+  a{
+    text-decoration: none;
+    color: $white-color;
+  }
 }
 
 @media(max-width:375px and 768px){
@@ -198,12 +203,12 @@ nav {
       line-height: 1.7rem;
     
     }
-    button {
-      width: 40%;
+    .button {
+      width: 60%;
       background-color: $bleu2-color;
-      border: none;
+      outline: none;
       color: white;
-      padding: 6px 100px;
+      padding: 6px 20px;
       border: 1px solid  $bleu2-color;
       border-radius: 4px;
       text-align: center;

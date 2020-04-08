@@ -20,8 +20,8 @@
         bottom: 11px;
       }
       .line {
-        width: 320px;
-        height: 3px;
+        width: 350px;
+        height: 4px;
         background-color: $green-color;
       }
       div{
@@ -62,8 +62,15 @@
         margin: 0 auto;
         text-align: center;
         list-style: none;
-        padding: 0 2rem ;
+        padding: 0 3rem ;
         display: inline-block;
+        @media(max-width: 375px){
+          margin: 0 auto;
+          text-align: center;
+          list-style: none;
+          padding: 0 1rem ;
+          display: inline-block;
+        }
         
     }
 }
@@ -103,8 +110,7 @@
         border-radius: 10px;
         background-color: $yellow-color;
       }
-      .button1{
-      
+      .button-preambule{
         background-color: $bleu2-color;
         color: white;
         padding: 4px 40px;
