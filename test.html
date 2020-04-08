@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,27 +11,128 @@
     <link rel="stylesheet" href="dist/css/main.css" />
     <title>COVID-19</title>
 </head>
+
 <body>
     <!-- navigation -->
-  <nav class="navbar">
-    <a href="#" class="c"><img src="img/SVG/logo__sante-1.svg" alt="ministre de santé" /></a>
-    <ul class="navbar--items">
-      <li><a href="conseil.html" class="active">Conseil</a></li>
-      <li><a href="index.html">Acceuil</a></li>
-      <li class="navbar--items--btn">
-        <a href="#"><span>عربي</span><img src="img/SVG/www.svg" alt="" class="navbar--items--btn-img" /></a>
-      </li>
-    </ul>
-  </nav>
-  <section class="test">
-      <div class="stepper">
-        <ul class="progressBar">
-            <li class="active">Informations</li>
-            <li class="active">Questionnaire</li>
-            <li>Résultats</li>
-          </ul>
+    <nav class="navbar">
+        <a href="#" class="c"><img src="img/SVG/logo__sante-1.svg" alt="ministre de santé" /></a>
+        <ul class="navbar--items">
+            <li><a href="conseil.html" class="active">Conseil</a></li>
+            <li><a href="index.html">Acceuil</a></li>
+            <li class="navbar--items--btn">
+                <a href="#"><span>عربي</span><img src="img/SVG/www.svg" alt="" class="navbar--items--btn-img" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--section test-->
+    <section class="test">
+        <div class="test--container">
+            <div class="container">
+                <div class="progress-bar">
+                    <span class="step-circle color-bleu"><div class="circle color-yellow"></div></span>
+                    <div class="line"><span class="step-circle circle2"><div class="circle"></div></span></div>
+                    <span class="step-circle"><div class="circle"></div></span>
+                </div>
+                <ul class="progress-items">
+                    <li class="progress-items1">Informations</li>
+                    <li class="progress-items2">Questionnaire</li>
+                    <li class="progress-items3">Résultats</li>
+                </ul>
+
+            </div>
+            <!-- <div class="stepper">
+                <div class="step active">
+                    <div class="step-circle">
+                        <p>1</p>
+                    </div>
+                    <p class="step-title">Informations</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">
+                        <p>2</p>
+                    </div>
+                    <p class="step-title">Questionnaire</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">
+                        <p>3</p>
+                    </div>
+                    <p class="step-title">Résultats</p>
+                </div>
+            </div> -->
+            <div class="container">
+            <div class="preambule">
+                <div class="preambule-content">
+                    <h2 class="preambule-header">Préambule</h2>
+                    <p>
+                        L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour
+                        contribuer à fluidifier la prise en charge des personnes par les services d’urgences pendant
+                        l’épidémie de Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des
+                        informations et contenus mis à disposition dans cette application, ou leur adéquation à des
+                        finalités particulières, ne sont pas garantis.
+                        <hr>
+                        Cette application ne substitue pas votre médecin qui est plus apte a vous donner plus de
+                        précision.<br>
+                        Les informations de cette application est le premier niveau de la détection des cas possibles du
+                        COVID-19.
+                    </p>
+                </div>
+                <button class="button1 button-primary" ><a href="#">Démarrer le test</a></button>
+            </div>
+    </section>
+
+    <!--start-recommendation-->
+  <section class="recommandations">
+    <h2 class="recommandations__title">Recommandations officielles</h2>
+    <div class="recommandations__container">
+      <div class="recommandations__para">
+        <p class="recommandations__para1"> Si vous pensez être malade,</p>
+        <p class="recommandations__para2"> Evitez les endroits publics.</p>
+        <p class="recommandations__para2"> Ne rendez pas visite aux personnes fragiles.</p>
+        <p class="recommandations__para2"> Evitez de sortir de chez vous.</p>
+        <p class="recommandations__para2"> Respectez les mesures barrière (lavage de main, masque).</p>
+        <p class="recommandations__para2"> Surveillez vos symptômes, l’évolution de votre température.</p>
+        <p class="recommandations__para3"> corporelle et recherchez un avis médical.</p>
       </div>
+      <div class="recommandations__numero">
+        <h3 class="recommandations__numero_title">Apple Gratuit</h3>
+        <button class="recommandations__numero_button">080 100 47 47</button>
+        <a class="recommandations__numero_lien" href="https://www.sante.gov.ma/" target="_blank">www.sante.gov.ma</a>
+      </div>
+    </div>
   </section>
-    
+  <!--end-recommendation-->
+
+   <!-- start-footer -->
+   <footer class="footer">
+    <div class="footer__logo"><img src="img/png/logo__sante-1.png" alt="logo"></div>
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <ul class="footer__left--list">
+          <li class="footer__left--btn"><a href="#"> <span> عربي </span>              <img src="img/SVG/www.svg" alt="" class="footer__left--btn-img"/></a>
+          <li class="footer__left--acceuil"><a class="acc" href="/Acceuil.html">Acceuil</a></li>
+          <li class="footer__left--conseils"><a class="ajj"href="">Conseil</a></li>
+        </ul>
+      </div>
+      <div class="footer__center">
+        <h5 class="footer__center--title">Contacts utiles</h5>
+        <p class="footer__center--para">Chiffre économique "Alo épidémie vigilance"</p>
+        <p class="footer__center--num">080 100 47 47</p>
+        <p class="footer__center--para">Aide médicale urgente</p>
+        <p class="footer__center--num">141</p>
+      </div>
+      <div class="footer__right">
+        <p>Algorithme d'orientation mis à jour sur les recommandations en vigueur<br>
+          au 22/03/2020 à 16h15. Ce site d’information n’est pas un dispositif médical,<br>
+          il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance<br>
+          Digitale contre le COVID-19 : @maladiecovid19</p>
+      </div>
+    </div>
+  </footer>
+  <div class="bottom-footer"></div>
+  <!--end-footer-->
+
 </body>
+
 </html>

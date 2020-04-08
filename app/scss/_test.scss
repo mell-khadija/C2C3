@@ -1,65 +1,185 @@
 .test{
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
-.stepper{
+.progress-bar{
+    width: 350px;
+    margin: 10rem auto  2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;;
+    }
+    .circle2{
+        display: inline-block;
+        position: relative;
+        left: 138px;
+        bottom: 11px;
+      }
+      .line {
+        width: 320px;
+        height: 3px;
+        background-color: $green-color;
+      }
+      div{
+        display: inline-block;
+        height: 8px;
+        width: 9px;
+        background-color:  $bleu2-color;
+        border-radius: 50%;
+        margin-bottom: 3px;
+        @media (max-width: 676px) {
+          margin-bottom: 1px;
+        }
+      }
+  
+}
+.step-circle{
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.color-bleu {
+    background-color:  $bleu1-color;
+  }
+  
+.color-yellow {
+    background-color: $yellow-color !important;
+  }
+
+.progress-items{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    max-width: 220px;
     margin: 0 auto;
-    width: 100%;
-    display: inline;
-}
-.wrapper-progressBar {
-    width: 100%
+    li{
+        margin: 0 auto;
+        text-align: center;
+        list-style: none;
+        padding: 0 2rem ;
+        display: inline-block;
+        
+    }
 }
 
-.progressBar {
-    margin: 0 auto;
-}
 
-.progressBar li {
-    list-style-type: none;
-    float: left;
-    width: 10%;
+
+.preambule{
     
-    position: relative;
     text-align: center;
-}
+    font-size: 20px;
+    font-weight: 600;
+    margin: 6rem 0 0 0;
+    .preambule-content{
+        max-width: 90%;
+        padding:  0 20px 20px 20px;
+        background-color:  $bleu1-color;
+        margin: 0 auto;
+        border-radius: 6px;
+    }
+    .preambule-header{
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        color:$bleu2-color;
+        padding: .8rem 0 1rem 0;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    hr {
+        height: 2px;
+        width: 20%;
+        margin: 1.8rem auto;
+        border: none;
+        
+        border-radius: 10px;
+        background-color: $yellow-color;
+      }
+      .button1{
+      
+        background-color: $bleu2-color;
+        color: white;
+        padding: 4px 40px;
+        border: 1px solid  $bleu2-color;
+        border-radius: 4px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 34px;
+        font-weight: bold;
+        margin: 3rem auto;
+        outline: none;
+        a{
+          text-decoration: none;
+          color: white;
+        }
 
-.progressBar li:before {
-    content: " ";
-    line-height: 30px;
-    border-radius: 70%;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #ddd;
-    display: block;
-    text-align: center;
-    margin: 0 auto 10px;
-    background-color: white
+      }
+    
 }
+// @media(max-width: 375px){
+//   .button1{
+//     width: 250px;
+//     background-color:$secondary_color;
+//     color: white;
+//     padding: 4px 20px;
+//     border: 1px solid $secondary_color;
+//     border-radius: 4px;
+//     margin: 3rem auto;
+//     display: inline;
+//     outline: none;
+//     a{
+//       text-decoration: none;
+//       text-align: center;
+//       color: white;
+//       font-size: 26px;
+//       font-weight: bold;
+//       width: 100%;
+//       margin: 0 auto;
+//     }
+    
 
-.progressBar li:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #ddd;
-    top: 15px;
-    left: -50%;
-    z-index: -1;
-}
+//   }
+// }
 
-.progressBar li:first-child:after {
-    content: none;
-}
 
-.progressBar li.active {
-    color: $secondary_color;
-}
 
-.progressBar li.active:before {
-    border-color: $secondary_color;
-    background-color: $secondary_color;
-}
 
-.progressBar li.active + li:after {
-    background-color: $secondary_color;
-}
+// .step{
+//     display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0 20px 0 20px;
+// }
+// .step.active {
+//   display: flex;
+//   .step-circle{
+//       background-color: $secondary_color;
+//   }
+  
+// }
+// .step-title{
+//     font-size: 18px;
+//    font-weight: 600;
+//     color: #333;
+// }
+// .step-circle{
+//     margin-right: 10px;
+//     height: 28px;
+//     width: 28px;
+//     background-color: rgba(0,0,0,0.3);
+//     border-radius: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: #fff;
+//     font-size: 12px;
+//     font-weight: bold
+// }
