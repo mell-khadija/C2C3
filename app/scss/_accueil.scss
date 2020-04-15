@@ -3,7 +3,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 24px;
   background-image: url("../../img/SVG/Merged\ bar-1.svg");
   background-size: cover;
   align-items: center;
@@ -19,7 +19,7 @@ nav {
     justify-content: space-between;
     display: flex;
     list-style: none;
-    margin-right: 35px;
+    margin-right: 40px;
     li {
       padding: 5px 10px;
       a {
@@ -54,7 +54,7 @@ nav {
 
 // section hero
 .hero {
-  margin-top: 88px;
+  margin-top: 5.8rem;
   background-color: $yellow-color;
   width: 100%;
 }
@@ -83,7 +83,7 @@ nav {
 
 @media (max-width: 375px) {
   .hero {
-    margin-top: 88px;
+    margin-top: 5.8rem;
     width: 100%;
   }
   .hero--warning {

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/normalize.css" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>COVID-19</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <a href="#" class="logo"><img src="img/SVG/logo__sante-1.svg" alt="#" /></a>
+        <ul class="navbar-items">
+            <li><a href="conseil.html">Conseil</a></li>
+            <li><a href="index.html" class="color">Acceuil</a></li>
+            <li class="navbar-items-button"><a href="#"><span>عربي</span><img src="img/SVG/www.svg" alt=""
+                        class="navbar-items-button-img" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="progress-bar">
+            <span class="step-circle">
+                <div class="circle"></div>
+            </span>
+            <span class="step-circle color-bleu">
+                <div class="circle color-yellow"></div>
+            </span>
+            <span class="step-circle">
+                <div class="circle"></div>
+            </span>
+        </div>
+        <ul class="progress-items">
+            <li class="progress-items1">Informations</li>
+            <li class="progress-items2">Questionnaire</li>
+            <li class="progress-items3">Résultats</li>
+        </ul>
+    </div>
+
+    <section class="quiz">
+        <div class="quiz-progress">
+            <div class="header-module-progress">
+                <div class="h-100 new-color" id="indiceNumber" style="width:0%; transition: all 0.3s ease 0s;"></div>
+            </div>
+            <span id="number">1/23</span>
+        </div>
+
+        <div class="container quiz-question">
+            <div class="form_question" id="formQts">
+            <p class="question" id="mel"></p>
+        </div>
+            <div class="form_ans" id="formAns">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="input-on" name="step_value" value="1" onclick="chose()" required />
+                    <label for="input-radio-step_cough-on">
+                        Oui
+                        <span class="hover-border"></span>
+                    </label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="input-off" name="step_value" value="0" required />
+                    <label for="input-radio-step_cough-off">
+                        Non
+                        <span class="hover-border"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="container button-submit">
+            <button class="button-quiz button-primary" id="btn_pre">Question président</button>
+            <button class="button-quiz button-primary" id="btn_svnt" onclick="buttonSvt()">Question suivant</button>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="dist/js/general.js"></script>
+</body>
+
+</html>
