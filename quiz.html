@@ -52,30 +52,30 @@
             <span id="number">1/23</span>
         </div>
 
-        <div class="container quiz-question">
-            <div class="form_question" id="formQts">
-            <p class="question" id="mel"></p>
-        </div>
-            <div class="form_ans" id="formAns">
-                <div class="custom-control custom-radio">
-                    <input type="radio" id="input-on" name="step_value" value="1" onclick="chose()" required />
-                    <label for="input-radio-step_cough-on">
-                        Oui
-                        <span class="hover-border"></span>
-                    </label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" id="input-off" name="step_value" value="0" required />
-                    <label for="input-radio-step_cough-off">
-                        Non
-                        <span class="hover-border"></span>
-                    </label>
-                </div>
+        <div class="Test">
+            <h1 class="title">Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</h1>
+          </div>
+      
+          <div class="form_ans" id="formAns">
+            <div class="custom-control custom-radio">
+                <input type="radio" id="input-on" name="step_value" value="1" onclick="chose()" required />
+                <label for="input-radio-step_cough-on">
+                    Oui
+                    <span class="hover-border"></span>
+                </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="input-off" name="step_value" value="0" required />
+                <label for="input-radio-step_cough-off">
+                    Non
+                    <span class="hover-border"></span>
+                </label>
             </div>
         </div>
-        <div class="container button-submit">
-            <button class="button-quiz button-primary" id="btn_pre">Question président</button>
-            <button class="button-quiz button-primary" id="btn_svnt" onclick="buttonSvt()">Question suivant</button>
+        <div class="button-submit">
+          <button id="back" class="button-quiz" onclick="backchange()">Question Précédente</button>
+          <button id="next" class="button-quiz" onclick="nextchange()">Question Suivante</button>
+          
         </div>
 
     </section>

@@ -7,16 +7,50 @@ function  Progress(num) {
 
 
 
-  const btnSubmit = document.querySelector(".button-submit");
-  const qstForm = querySelectorAll(".form_question");
-  const ansForm = querySelectorAll(".form_ans");
-  const para = querySelector(".question-title");
-  const buttonPre = document.querySelector('#btn-pre');
-  const buttonSvt = document.querySelector('#btn-svnt');
-  let counter = 0;
-  
+  // const btnSubmit = document.querySelector(".button-submit");
+  // const qstForm = querySelectorAll(".form_question");
+  // const ansForm = querySelectorAll(".form_ans");
+  // const para = querySelector(".question-title");
+  // const buttonPre = document.querySelector('#btn-pre');
+  // const buttonSvt = document.querySelector('#btn-svnt');
+  // let counter = 0;
 
+  let h1, nextBtn, backBtn, div, mydiv, questions;
 
+mydiv = document.querySelector("#Divcontent");
+h1 = document.querySelector(".title");
+nextBtn = document.getElementById("next");
+backBtn = document.getElementById("back");
+div = document.querySelector(".Test");
+
+questions = [
+  "Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?",
+   "Quelle est votre température corporelle ?",
+   "Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?",
+   "Avez-vous eu des courbatures inhabituelles au cours des derniers jours ?",
+   "Ces derniers jours, avez-vous un mal de gorge",
+   "Ces dernières 24 heures, avez-vous de la diarrhée ? Avec au moins 3 selles molles.",
+   "Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ?",
+   "Ces derniers jours, avez-vous une fatigue inhabituelle qui vous a obligé à vous reposer plus de la moitié de la journée ?",
+   "Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?",
+   "Dans les dernières 24 heures, avez-vous noté un manque de souffle inhabituel lorsque vous parlez ou faites un petit effort ?",
+];
+let counter;
+counter = 0;
+
+function nextchange() {
+ if (h1.innerText === questions[counter] && counter !== 9) {
+   counter++;
+   h1.innerText = questions[counter];
+ }
+}
+
+function backchange() {
+ if (counter > 0) {
+   counter--;
+   h1.innerText = questions[counter];
+ }
+}
 
 
 
@@ -138,13 +172,7 @@ const myQuestions = [
   //get the next qst
 
 
-  const buttonPre = document.getElementById('#btn_pre');
-  const buttonSvt = document.getElementById('#btn_svnt');
-  // const para = document.getElementById('#mel');
-  // let counter = 0;
- function  buttonSvt(){
-    
- }
+ 
 
   // buttonSvt.addEventListener('click',function(){
   //    div.style.backgroundColor = "red";
@@ -172,7 +200,7 @@ const myQuestions = [
     //   collectAnswer(result, counter);
     // }
  
-  buttonSvt.innerText = "Question suivant";
+
  
 
 

@@ -79,13 +79,17 @@
      
   }
 
+.title{
+  text-align:center ;
+  margin: 2rem auto;
+}
 
-.quiz-question{
+
+.custom-control{
   margin-top:  4rem;
-  text-align-last: center;
-  .question-title{
-    margin: 7rem 0 ;
-    text-align: center;
+  text-align: center;
+  .hover-border{
+    color: $yellow-color;
   }
 }
 
