@@ -79,31 +79,272 @@
      
   }
 
-.title{
-  text-align:center ;
-  margin: 2rem auto;
-}
+// .title{
+//   text-align:center ;
+//   margin: 2rem auto;
+// }
 
 
-.custom-control{
-  margin-top:  4rem;
-  text-align: center;
-  .hover-border{
-    color: $yellow-color;
-  }
-}
+// .custom-control{
+//   margin-top:  4rem;
+//   text-align: center;
+//   .hover-border{
+//     color: $yellow-color;
+//   }
+// }
 
-.button-submit{
-  margin: 10rem auto;
-  text-align: center;
-  .button-quiz{
+// .button-submit{
+//   margin: 10rem auto;
+//   text-align: center;
+//   .button-quiz{
   
-    background-color:$bleu2-color;
-    outline: none;
-    color: white;
-    padding: 5px 30px;
-    border: 2px solid  $bleu2-color;
-    border-radius: 5px;
-    text-align: center;
+//     background-color:$bleu2-color;
+//     outline: none;
+//     color: white;
+//     padding: 5px 30px;
+//     border: 2px solid  $bleu2-color;
+//     border-radius: 5px;
+//     text-align: center;
+//   }
+// }
+
+.preambule-content{
+  max-width: 80%;
+  padding:  0 10px 20px 10px;
+  background-color:  $bleu1-color;
+  margin: -2rem  auto 0 auto;
+  border-radius: 6px;
+}
+
+.preambule{
+    
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 6rem 0 0 0;
+ 
+  .preambule-header{
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      color:$bleu2-color;
+      padding: .8rem 0 1rem 0;
+  }
+  p{
+      font-size: 20px;
+      font-weight: 600;
+  }
+  hr {
+      height: 2px;
+      width: 20%;
+      margin: 1.8rem auto;
+      border: none;
+      
+      border-radius: 10px;
+      background-color: $yellow-color;
+    }
+    
+  
+}
+
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Cairo", sans-serif;
+  padding: 10px 20px;
+  margin: 20px 0 20px 38rem;
+  text-align: center;
+  border-radius: 6px;
+  width: 50%;
+  max-width: 250px;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  a {
+    width: 50%;
+    margin-left: 30%;
+    @media (max-width: 400px) {
+      margin-left: 20%;
+    }
+  
+
   }
 }
+.btn-preambule {
+  color: $white-color;
+  background-color: $bleu2-color;
+}
+
+
+.question{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+.form{
+    text-align: center;
+    padding: 15px;
+    max-width: 400px;
+    margin: 3px auto;
+    font-size: 20px;
+    margin-top: 20px;
+     .form_check{
+      margin-bottom: 24px;
+      width: 180px;
+      color: #000000;
+      display: flex;
+      justify-content: space-around;
+     }
+   .text{
+     margin: 3rem auto;
+     height: 64px;
+     width: auto;
+     padding: 0 16px;
+     font-size: 28px;
+     font-weight: 500;
+     color: #333;
+     border: 3px solid #333;
+     box-sizing: border-box;
+   }
+   
+}
+
+
+
+.btn_next{
+  background-color: $bleu2-color;
+  color: $white-color;
+}
+.btn2{
+ display: inline;
+  text-decoration: none;
+  font-family: "Cairo", sans-serif;
+  padding: 10px 20px;
+  margin: 0 0 0 33rem;
+  text-align: center;
+  border-radius: 6px;
+  
+  max-width: 250px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  
+}
+.btn_back{
+  margin: 0 0 0 5rem;
+  background-color: $bleu2-color;
+  color: $white-color;
+}
+
+
+
+
+#stepProgressBar  {
+  display:  flex;
+  justify-content:  space-between;
+  align-items:  flex-end;
+  width:  300px;
+  margin:  0  auto;
+  margin-bottom:  40px;
+  margin-top:8rem;
+}
+
+.step  {
+text-align:  center;
+
+}
+
+.step-text  {
+margin-bottom:  10px;
+color:  #286aa7;
+}
+
+
+.bullet {
+  border: 1px solid #2863a7;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: #6e723d;
+  display: inline-block;
+  position: relative;
+  background-color: #2863a7;
+  transition: background-color .2s;
+  line-height:20px;
+}
+
+
+.cercle.completed  {
+  color:  white;
+  background-color:  rgb(228, 206, 8);
+}
+.cercle.color{
+  background-color:  rgb(228, 206, 8);
+}
+
+
+/* Base styles and helper stuff */
+
+.hidden  {
+  display:  none;
+}
+
+// button  {
+//   padding:  5px  10px;
+//   border:  1px  solid  black;
+//   transition:  250ms background-color;
+// }
+
+// button:hover  {
+//   cursor:  pointer;
+//   background-color:  black;
+//   color:  white;
+// }
+
+// button:disabled:hover  {
+//   opacity:  0.6;
+//   cursor:  not-allowed;
+// }
+
+.text-center  {
+  text-align:  center;
+}
+
+.container2  {
+  max-width:  400px;
+  margin:  0  auto;
+  margin-top:  20px;
+  padding:  40px;
+}
+.cercle{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #2863a7;
+  border-radius: 50%;
+  text-align: center;
+  
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+ 
+
+input:disabled {
+  cursor: not-allowed;
+}
+
+
+
+
