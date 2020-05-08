@@ -73,7 +73,17 @@
             </div>
             <span id="number">1/23</span>
         </div> -->
-        <div  id="start_test">
+        <div class="container hide" id="progresse">
+         <div class="numerotation">
+            <div class="relative">
+              <div class="progressbar">
+              </div>
+              <progress id="file" max="22"> </progress>
+            </div>
+            <p id="afficheNum"></p>
+          </div>
+        </div>
+        <div  id="start_test" class="part">
             <div class="container preambule-content" id="preambule">
               <div class="preambule">
                   <h2 class="preambule-header">Préambule</h2>
@@ -86,14 +96,53 @@
             <a class="btn btn-preambule" id="start_survey" >Demarer le test</a>
       
           </div>
-          <!-- <div class="numerotation">
-            <div class="relative">
-              <div class="progressbar">
+         <div class="container preambule-content part hide" id="aff_result">
+          <div class="preambule" >
+            <h3 class="preambule-header">Résultat</h3>
+            <p id="afficher"> </p>
+            <hr>
+            <p> Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux
+              fois par jour. Rappel des mesures d’hygiène. </p>
+          </div>
+        </div>
+        <div id="repeter" class="hide">
+          <button class="btn-test btn-re hide" >Recommencer teste</button>
+        </div>
+         
+
+          <section class="recommandations">
+            <h2 class="recommandations__title">Recommandations officielles</h2>
+            <div class="recommandations__container">
+              <div class="recommandations__para">
+                <p class="recommandations__para1"> Si vous pensez être malade,</p>
+                <p class="recommandations__para2"> Evitez les endroits publics.</p>
+                <p class="recommandations__para2"> Ne rendez pas visite aux personnes fragiles.</p>
+                <p class="recommandations__para2"> Evitez de sortir de chez vous.</p>
+                <p class="recommandations__para2"> Respectez les mesures barrière (lavage de main, masque).</p>
+                <p class="recommandations__para2"> Surveillez vos symptômes, l’évolution de votre température.</p>
+                <p class="recommandations__para3"> corporelle et recherchez un avis médical.</p>
               </div>
-              <progress id="file" max="3"> </progress>
+              <div class="recommandations__numero">
+                <h3 class="recommandations__numero_title">Apple Gratuit</h3>
+                <button class="recommandations__numero_button">080 100 47 47</button>
+                <a class="recommandations__numero_lien" href="https://www.sante.gov.ma/" target="_blank">www.sante.gov.ma</a>
+              </div>
             </div>
-            <p id="afficheNum"></p>
-          </div> -->
+          </section>
+          <!--end-recommendation-->
+          <!--hero-footer-->
+          <section class="heroFooter">
+            <div class="heroFooter__container">
+              <div class="heroFooter__title">
+                <h3>Vous pensez avoir été exposé au Coronavirus COVID-19 et vous avez des symptômes ?</h3>
+              </div>
+              <div class="heroFooter__emoji">
+                <img src="img/png/1f637.png" alt="emoji">
+              </div>
+              <button class="heroFooter__button">Démarrer le test</button>
+            </div>
+          </section>
+
               <!-- start-footer -->
   <footer class="footer">
     <div class="footer__logo"><img src="img/png/logo__sante-1.png" alt="logo"></div>
@@ -123,34 +172,8 @@
   <div class="bottom-footer"></div>
   <!--end-footer-->
 
-        <!-- <div class="Test">
-            <h1 class="title">Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</h1>
-          </div>
-      
-          <div class="form_ans" id="formAns">
-            <div class="custom-control custom-radio">
-                <input type="radio" id="input-on" name="step_value" value="1" onclick="chose()" required />
-                <label for="input-radio-step_cough-on">
-                    Oui
-                    <span class="hover-border"></span>
-                </label>
-            </div>
-            <div class="custom-control custom-radio">
-                <input type="radio" id="input-off" name="step_value" value="0" required />
-                <label for="input-radio-step_cough-off">
-                    Non
-                    <span class="hover-border"></span>
-                </label>
-            </div>
-        </div> -->
-        <!-- <div class="button-submit">
-          <button id="back" class="button-quiz" onclick="backchange()">Question Précédente</button>
-          <button id="next" class="button-quiz" onclick="nextchange()">Question Suivante</button>
-          
-        </div> -->
-
-    <!-- </section> -->
-
+       
+        
 
 
 
