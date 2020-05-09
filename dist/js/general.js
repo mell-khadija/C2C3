@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
             </h4>
             <form class="form" id="form">
               <div><input class="text" type="number" name="step_value" id="fievre"  min="34" max="42" step=0.2 placeholder=34,0  required/>
-              <span>Degré</span></di>
+              <div class="form_control">Degré</div></div>
             </form>
           </div>
         `,
@@ -166,8 +166,8 @@ window.addEventListener("load", () => {
             Quel est votre âge ? Ceci, afin de calculer un facteur de risque spécifique.
             </h4>
             <form class="form" id="form">
-            <div><input class="text" type="text" value="" name="QR" id="fievre" min="15" max="70" placeholder="your age" required/>
-            <span> Ans </span></div>
+            <div><input class="text" type="text" value="" name="QR" id="fievre" min="10" max="70" placeholder="your age" required/>
+            <div class="form_control"> Ans </div></div>
             </form>
           </div>
         `,
@@ -180,7 +180,7 @@ window.addEventListener("load", () => {
             Quel est votre poids ? Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.
             </h4>
             <form class="form" id="form">
-            <div ><input  class="text" type=" number" id="poid" min="30" max="200" placeholder=""><span>Kg</span></div>
+            <div ><input  class="text" type=" number" id="poid" min="30" max="200" placeholder=""><div class="form_control">Kg</div></div>
             </form>
           </div> 
         `,
@@ -193,7 +193,7 @@ window.addEventListener("load", () => {
             Quelle est votre taille ? Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.
             </h4>
             <form class="form" id="form">
-            <div><input  class="text" type=" number" id="taille" min="100" max="260" placeholder=""><span>Cm</span></div>
+            <div><input  class="text" type=" number" id="taille" min="100" max="260" placeholder=""><div class="form_control">Cm</div></div>
             </form>
           </div>
         `,
@@ -395,8 +395,9 @@ start_survey.addEventListener('click',  ()  =>  {
     start_test.innerHTML = "";
     app.innerHTML = question[0].q;
     start_test.appendChild(app);
-    start_test.appendChild(next);
     start_test.appendChild(prev);
+    start_test.appendChild(next);
+    
     progresse.classList.remove("hide");
     inputs = document.querySelectorAll("form  input");
     prev.classList.add("hide");
@@ -525,22 +526,7 @@ start_survey.addEventListener('click',  ()  =>  {
 //
 //
 
-// function getAns(qs, result) {
-//   let form = document.getElementById("form  input");
 
-//   //   form element
-//   if (form.elements.length > 1) {
-//     // donc its a radio group;
-//     for (let i = 0; i < form.elements.length; i++) {
-//       if (form.elements[i]) {
-//         result[qs.id] = form.elements[i].value;
-//         console.log(result);
-//       }
-//     }
-//   } else {
-//     result[qs.id] = form.elements[0].value;
-//   }
-// }
 var resultat = [];
 inputs = document.querySelectorAll(".form input");
 tabresultat = (e) => {
@@ -548,6 +534,13 @@ tabresultat = (e) => {
     inputs[i].addEventListener("change", () => {
       if (inputs.length == 1) {
         resultat.splice(e, 1, inputs[0].value);
+        if (i === 0 && resultat[i] < 15) {
+          alert("is it less 1")
+          messageFinal.innerText = messageAffiche[6];
+          
+        }
+        
+        
         
       } else {
         if (inputs[i].checked == true) {
@@ -686,14 +679,12 @@ Algorithme = () => {
 };
 
 
-messageAffiche = [
+ const messageAffiche = [
   ` nous vous conseillons de rester à votre domicile et de contacter votre médecin en cas d’apparition de nouveaux symptômes. Vous pourrez aussi utiliser à nouveau l’application pour réévaluer vos symptômes. `,
-  `téléconsultation ou médecin généraliste ou visite à domicile  préciser “appelez le 141 si une gêne respiratoire ou des difficultés importantes pour s’alimenter ou boire pendant plus de 24h apparaissent.” 
- `,
+  `téléconsultation ou médecin généraliste ou visite à domicile  préciser “appelez le 141 si une gêne respiratoire ou des difficultés importantes pour s’alimenter ou boire pendant plus de 24h apparaissent.`,
   `appel 141 `,
   ` téléconsultation ou médecin généraliste ou visite à domicile  `,
   `Votre situation ne relève probablement pas du Covid-19. Consultez votre médecin au moindre doute`,
-  `Votre situation ne relève probablement pas du Covid-19. N’hésitez pas à contacter votre médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la   situation.   Pour   toute information concernant   le   Covid-19 allez vers la page d’accueil. 
- `,
+  `Votre situation ne relève probablement pas du Covid-19. N’hésitez pas à contacter votre médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la   situation.   Pour   toute information concernant   le   Covid-19 allez vers la page d’accueil. `,
   ` Prenez contact avec votre médecin généraliste au moindre doute. Cette application n’est pour l’instant pas adaptée aux personnes de moins de 15 ans. En cas d’urgence, appeler le 15. `,
 ];

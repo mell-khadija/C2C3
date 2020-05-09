@@ -77,7 +77,7 @@
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-  margin: 6rem 0 0 0;
+  margin: 3rem 0 0 0;
  
   .preambule-header{
       font-size: 32px;
@@ -176,6 +176,14 @@
       margin: 1.5em 0;
   
    }
+   .form_control{
+    font-weight: 600;
+    font-size: 28px;
+    margin-left: 15px;
+    margin-top: .5em;
+    display: inline-block;
+    color: $grey;
+   }
   
   //  span {
   //   font-size: 22px;
@@ -188,7 +196,7 @@
    label {
     text-align: center;
     line-height: 1em;
-    color: #000;
+    color: $grey;
     font-weight: 600;
     font-size: 1em;
     margin: .5em 1.5em .5em 1em;
@@ -201,14 +209,15 @@
 
 .btn_next{
   background-color: $bleu2-color;
+  
   color: $white-color;
 }
 .btn2{
  display: inline;
   text-decoration: none;
   font-family: "Cairo", sans-serif;
-  padding: 10px 20px;
-  margin: 0 0 0 33rem;
+  padding: 20px 45px;
+  margin: 0 0 0 10rem;
   text-align: center;
   border-radius: 6px;
   
@@ -216,12 +225,12 @@
   outline: none;
   border: none;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   cursor: pointer;
   
 }
 .btn_back{
-  margin: 0 0 0 5rem;
+  margin: 0 0 0 28rem;
   background-color: $bleu2-color;
   color: $white-color;
 }
@@ -235,8 +244,8 @@
   align-items:  flex-end;
   width:  300px;
   margin:  0  auto;
-  margin-bottom:  40px;
-  margin-top:8rem;
+  margin-bottom:  20px;
+  margin-top: 7rem;
 }
 
 .step  {
@@ -304,7 +313,7 @@ color:  #286aa7;
   max-width:  400px;
   margin:  0  auto;
   margin-top:  20px;
-  padding:  40px;
+  padding:  20px;
 }
 .cercle{
   display: inline-block;
@@ -346,7 +355,7 @@ input:disabled {
   
   background-color: #fff;
   border-radius: 4px;
-  border: 4px solid $bleu1-color;
+  border: 4px solid $bleu2-color;
   margin-bottom: 3rem;
   // margin-left: 10%;
 }
@@ -385,7 +394,7 @@ input:disabled {
   display: inline;
   text-decoration: none;
   font-family: "Cairo", sans-serif;
-  padding: 10px 20px;
+  padding: 20px 20px;
   margin: 2rem 0 0 41rem;
   text-align: center;
   border-radius: 6px;
@@ -394,7 +403,7 @@ input:disabled {
   outline: none;
   border: none;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   cursor: pointer;
   
 }
